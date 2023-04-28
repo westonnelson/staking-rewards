@@ -1,18 +1,19 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 
+const stakingContractAddress = "0xaA9D9a8f810463f24825c05f3075c1Fc6a430430";
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://thirdweb.com/">thirdweb</a>!
+          Welcome to NFTE token staking rewards!
         </h1>
 
         <p className={styles.description}>
-          Get started by configuring your desired network in{" "}
-          <code className={styles.code}>pages/_app.js</code>, then modify the{" "}
-          <code className={styles.code}>pages/index.js</code> file!
+          Get started by staking your $NFTE tokens.
+          <code className={styles.code}>pages/_app.js</code>, then watch your $ARB rewards grow!
         </p>
 
         <div className={styles.connect}>
@@ -20,29 +21,27 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="https://portal.thirdweb.com/" className={styles.card}>
-            <h2>Portal &rarr;</h2>
+          <a href="https://arbiscan.io/" className={styles.card}>
+            <h2>Arbiscan &rarr;</h2>
             <p>
-              Guides, references and resources that will help you build with
-              thirdweb.
+              Arbitrum block explorer
             </p>
           </a>
 
-          <a href="https://thirdweb.com/dashboard" className={styles.card}>
-            <h2>Dashboard &rarr;</h2>
+          <a href="https://docs.nftearth.exchange" className={styles.card}>
+            <h2>Docs &rarr;</h2>
             <p>
-              Deploy, configure and manage your smart contracts from the
-              dashboard.
+              NFTEarth docs
             </p>
           </a>
 
           <a
-            href="https://portal.thirdweb.com/templates"
+            href="https://nftearth.exchange"
             className={styles.card}
           >
-            <h2>Templates &rarr;</h2>
+            <h2>Marketplace &rarr;</h2>
             <p>
-              Discover and clone template projects showcasing thirdweb features.
+              Trade NFTs on L2
             </p>
           </a>
         </div>
